@@ -8,7 +8,7 @@
 
 import UIKit
 
-// MARK: - VillainCollectionViewCell: UICollectionViewCell
+// MARK: - MemeCollectionViewCell: UICollectionViewCell
 
 class MemeCollectionViewCell: UICollectionViewCell {
     

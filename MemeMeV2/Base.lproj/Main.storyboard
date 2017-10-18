@@ -137,7 +137,7 @@
                                     </subviews>
                                 </view>
                                 <connections>
-                                    <outlet property="memeImageView" destination="QxL-hd-ySL" id="pyS-PA-80z"/>
+                                    <outlet property="memeImageView" destination="QxL-hd-ySL" id="2YT-h8-pMk"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -319,6 +319,6 @@
         <image name="tableView" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vBS-yo-FZJ"/>
+        <segue reference="Efm-lD-44W"/>
     </inferredMetricsTieBreakers>
 </document>

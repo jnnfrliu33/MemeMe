@@ -17,16 +17,17 @@ class MemeCollectionViewController: UICollectionViewController {
 
     // MARK: Properties
     
-    var memes: [Meme]!
+    // To access the array of memes stored in Application Delegate
+    var memes: [Meme] { return (UIApplication.shared.delegate as! AppDelegate).memes }
     
     // MARK: Life Cycle
     
+    override func viewWillAppear(_ animated: Bool) {
+        collectionView?.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // To access the array of memes stored in Application Delegate
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        memes = appDelegate.memes
         
         // Flow Layout
         let space: CGFloat = 3.0

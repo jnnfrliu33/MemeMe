@@ -19,9 +19,12 @@ class MemeTableViewController: UITableViewController {
     
     // MARK: Life Cycle
     
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.reloadData()
     }
     
     // MARK: Table View Data Source

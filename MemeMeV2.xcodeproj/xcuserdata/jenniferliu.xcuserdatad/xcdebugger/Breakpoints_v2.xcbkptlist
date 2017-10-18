@@ -10,13 +10,90 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MemeMeV2/MemeCollectionViewCell.swift"
-            timestampString = "530023765.912794"
+            timestampString = "530026610.097248"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
             endingLineNumber = "12"
             landmarkName = "unknown"
             landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MemeMeV2.MemeCollectionViewCell.__deallocating_deinit"
+                  moduleName = "MemeMeV2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jenniferliu/Documents/Online%20Courses/Nanodegree%20Programs/iOS%20Developer/Core%20Curriculum/UIKit%20Fundamentals/Final%20Project/MemeMeV2/MemeMeV2/MemeCollectionViewCell.swift"
+                  timestampString = "530026610.178656"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MemeMeV2.MemeCollectionViewCell.__allocating_init(frame: __C.CGRect) -&gt; MemeMeV2.MemeCollectionViewCell"
+                  moduleName = "MemeMeV2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jenniferliu/Documents/Online%20Courses/Nanodegree%20Programs/iOS%20Developer/Core%20Curriculum/UIKit%20Fundamentals/Final%20Project/MemeMeV2/MemeMeV2/MemeCollectionViewCell.swift"
+                  timestampString = "530026610.181265"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MemeMeV2.MemeCollectionViewCell.init(frame: __C.CGRect) -&gt; MemeMeV2.MemeCollectionViewCell"
+                  moduleName = "MemeMeV2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jenniferliu/Documents/Online%20Courses/Nanodegree%20Programs/iOS%20Developer/Core%20Curriculum/UIKit%20Fundamentals/Final%20Project/MemeMeV2/MemeMeV2/MemeCollectionViewCell.swift"
+                  timestampString = "530026610.183624"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MemeMeV2.MemeCollectionViewCell.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;MemeMeV2.MemeCollectionViewCell&gt;"
+                  moduleName = "MemeMeV2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jenniferliu/Documents/Online%20Courses/Nanodegree%20Programs/iOS%20Developer/Core%20Curriculum/UIKit%20Fundamentals/Final%20Project/MemeMeV2/MemeMeV2/MemeCollectionViewCell.swift"
+                  timestampString = "530026610.186526"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MemeMeV2.MemeCollectionViewCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;MemeMeV2.MemeCollectionViewCell&gt;"
+                  moduleName = "MemeMeV2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jenniferliu/Documents/Online%20Courses/Nanodegree%20Programs/iOS%20Developer/Core%20Curriculum/UIKit%20Fundamentals/Final%20Project/MemeMeV2/MemeMeV2/MemeCollectionViewCell.swift"
+                  timestampString = "530026610.189645"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
