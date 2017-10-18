@@ -14,16 +14,14 @@ class MemeTableViewController: UITableViewController {
     
     // MARK: Properties
     
-    var memes: [Meme]!
+    // To access the array of memes stored in Application Delegate
+    var memes: [Meme] { return (UIApplication.shared.delegate as! AppDelegate).memes }
     
     // MARK: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // To access the array of memes stored in Application Delegate
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        memes = appDelegate.memes
+        tableView.reloadData()
     }
     
     // MARK: Table View Data Source
