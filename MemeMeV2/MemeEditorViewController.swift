@@ -43,23 +43,29 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set the text field delegate
-        self.topTextField.delegate = textFieldDelegate
-        self.bottomTextField.delegate = textFieldDelegate
-        
-        // Set default text attributes
-        self.topTextField.defaultTextAttributes = textFieldDelegate.memeTextAttributes
-        self.bottomTextField.defaultTextAttributes = textFieldDelegate.memeTextAttributes
-        
-        // Align text to the center of text field
-        self.topTextField.textAlignment = .center
-        self.bottomTextField.textAlignment = .center
+        configureTextField(textField: self.topTextField)
+        configureTextField(textField: self.bottomTextField)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         unsubscribeFromKeyboardNotifications()
+    }
+    
+    // MARK: Configuration Functions
+    
+    func configureTextField (textField: UITextField) {
+        textField.delegate = textFieldDelegate
+        
+        textField.defaultTextAttributes = textFieldDelegate.memeTextAttributes
+        textField.textAlignment = .center
+    }
+    
+    func configureNavToolbars (isHidden: Bool) {
+        self.topToolbar.isHidden = isHidden
+        self.bottomToolbar.isHidden = isHidden
+        self.navigationController?.navigationBar.isHidden = isHidden
     }
     
     // MARK: Keyboard Adjustment Methods
@@ -108,10 +114,7 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
     
     func generateMemedImage() -> UIImage {
         
-        // Hide toolbar and navbar
-        self.topToolbar.isHidden = true
-        self.bottomToolbar.isHidden = true
-        self.navigationController?.navigationBar.isHidden = true
+        configureNavToolbars(isHidden: true)
         
         // Render view to an image
         UIGraphicsBeginImageContext(self.view.frame.size)
@@ -119,10 +122,7 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
         let memedImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
-        // Show toolbar and navbar
-        self.topToolbar.isHidden = false
-        self.bottomToolbar.isHidden = false
-        self.navigationController?.navigationBar.isHidden = false
+        configureNavToolbars(isHidden: false)
         
         return memedImage
     }
@@ -130,19 +130,11 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
     // MARK: Actions
     
     @IBAction func captureImage(_ sender: Any) {
-        let imageCapture = UIImagePickerController()
-        imageCapture.delegate = self
-        imageCapture.sourceType = .camera
-        
-        present(imageCapture, animated: true, completion: nil)
+        chooseSourceType(sourceType: .camera)
     }
     
     @IBAction func pickImage(_ sender: Any) {
-        let imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imagePicker.sourceType = .photoLibrary
-        
-        present(imagePicker, animated: true, completion: nil)
+        chooseSourceType(sourceType: .photoLibrary)
     }
     
     @IBAction func shareImage(_ sender: Any) {
@@ -184,5 +176,13 @@ extension MemeEditorViewController: UIImagePickerControllerDelegate {
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func chooseSourceType (sourceType: UIImagePickerControllerSourceType) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = sourceType
+        
+        present(imagePicker, animated: true, completion: nil)
     }
 }
