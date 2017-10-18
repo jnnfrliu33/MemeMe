@@ -101,8 +101,25 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
     // MARK: Meme Generating Functions
     
     func save() {
+        
+        // Check for all required elements before generating meme
+        guard let topText = topTextField.text else {
+            print ("No text entered in top text field.")
+            return
+        }
+        
+        guard let bottomText = bottomTextField.text else {
+            print ("No text entered in bottom text field")
+            return
+        }
+        
+        guard let originalImage = imageView.image else {
+            print ("No image was picked to create meme")
+            return
+        }
+        
         // Create the meme
-        let meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imageView.image!, memedImage: generateMemedImage())
+        let meme = Meme(topText: topText, bottomText: bottomText, originalImage: originalImage, memedImage: generateMemedImage())
         
         // Add it to the memes array in the Application Delegate
         let object = UIApplication.shared.delegate
