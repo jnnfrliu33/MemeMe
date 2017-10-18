@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - MemeEditorViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate
 
-class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class MemeEditorViewController: UIViewController, UINavigationControllerDelegate {
     
     // MARK: Outlets
     
@@ -27,23 +27,6 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     // MARK: Text Field Delegate Object
     
     let textFieldDelegate = TextFieldDelegate()
-    
-    // MARK: UIImagePicker Delegate
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            imageView.image = image
-        }
-        
-        // Enable shareButton after an image is picked
-        dismiss(animated: true, completion: { () -> Void in
-            self.shareButton.isEnabled = true
-        })
-    }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        dismiss(animated: true, completion: nil)
-    }
     
     // MARK: Life Cycle
     
@@ -182,5 +165,24 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     @IBAction func cancel(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+}
+
+// MARK: UIImagePicker Delegate
+
+extension MemeEditorViewController: UIImagePickerControllerDelegate {
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            imageView.image = image
+        }
+        
+        // Enable shareButton after an image is picked
+        dismiss(animated: true, completion: { () -> Void in
+            self.shareButton.isEnabled = true
+        })
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
 }
