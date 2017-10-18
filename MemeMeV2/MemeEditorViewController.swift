@@ -31,7 +31,7 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
     // MARK: Life Cycle
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
+        super.viewWillAppear(animated)
         
         // Disable cameraButton if device has no camera and disable shareButton before an image is picked
         self.cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)

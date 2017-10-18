@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MemeMeV2/MemeCollectionViewCell.swift"
-            timestampString = "530026610.097248"
+            timestampString = "530027584.424732"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
@@ -26,7 +26,7 @@
                   moduleName = "MemeMeV2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jenniferliu/Documents/Online%20Courses/Nanodegree%20Programs/iOS%20Developer/Core%20Curriculum/UIKit%20Fundamentals/Final%20Project/MemeMeV2/MemeMeV2/MemeCollectionViewCell.swift"
-                  timestampString = "530026610.178656"
+                  timestampString = "530027584.45467"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -41,7 +41,7 @@
                   moduleName = "MemeMeV2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jenniferliu/Documents/Online%20Courses/Nanodegree%20Programs/iOS%20Developer/Core%20Curriculum/UIKit%20Fundamentals/Final%20Project/MemeMeV2/MemeMeV2/MemeCollectionViewCell.swift"
-                  timestampString = "530026610.181265"
+                  timestampString = "530027584.457497"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -56,7 +56,7 @@
                   moduleName = "MemeMeV2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jenniferliu/Documents/Online%20Courses/Nanodegree%20Programs/iOS%20Developer/Core%20Curriculum/UIKit%20Fundamentals/Final%20Project/MemeMeV2/MemeMeV2/MemeCollectionViewCell.swift"
-                  timestampString = "530026610.183624"
+                  timestampString = "530027584.459657"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -71,7 +71,7 @@
                   moduleName = "MemeMeV2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jenniferliu/Documents/Online%20Courses/Nanodegree%20Programs/iOS%20Developer/Core%20Curriculum/UIKit%20Fundamentals/Final%20Project/MemeMeV2/MemeMeV2/MemeCollectionViewCell.swift"
-                  timestampString = "530026610.186526"
+                  timestampString = "530027584.471197"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -86,7 +86,85 @@
                   moduleName = "MemeMeV2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jenniferliu/Documents/Online%20Courses/Nanodegree%20Programs/iOS%20Developer/Core%20Curriculum/UIKit%20Fundamentals/Final%20Project/MemeMeV2/MemeMeV2/MemeCollectionViewCell.swift"
-                  timestampString = "530026610.189645"
+                  timestampString = "530027584.484797"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MemeMeV2/MemeCollectionViewCell.swift"
+            timestampString = "530027584.425118"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "MemeCollectionViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MemeMeV2.MemeCollectionViewCell.memeImageView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "MemeMeV2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jenniferliu/Documents/Online%20Courses/Nanodegree%20Programs/iOS%20Developer/Core%20Curriculum/UIKit%20Fundamentals/Final%20Project/MemeMeV2/MemeMeV2/MemeCollectionViewCell.swift"
+                  timestampString = "530027584.538103"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MemeMeV2.MemeCollectionViewCell.memeImageView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "MemeMeV2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jenniferliu/Documents/Online%20Courses/Nanodegree%20Programs/iOS%20Developer/Core%20Curriculum/UIKit%20Fundamentals/Final%20Project/MemeMeV2/MemeMeV2/MemeCollectionViewCell.swift"
+                  timestampString = "530027584.54049"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MemeMeV2.MemeCollectionViewCell.init(frame: __C.CGRect) -&gt; MemeMeV2.MemeCollectionViewCell"
+                  moduleName = "MemeMeV2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jenniferliu/Documents/Online%20Courses/Nanodegree%20Programs/iOS%20Developer/Core%20Curriculum/UIKit%20Fundamentals/Final%20Project/MemeMeV2/MemeMeV2/MemeCollectionViewCell.swift"
+                  timestampString = "530027584.54488"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MemeMeV2.MemeCollectionViewCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;MemeMeV2.MemeCollectionViewCell&gt;"
+                  moduleName = "MemeMeV2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jenniferliu/Documents/Online%20Courses/Nanodegree%20Programs/iOS%20Developer/Core%20Curriculum/UIKit%20Fundamentals/Final%20Project/MemeMeV2/MemeMeV2/MemeCollectionViewCell.swift"
+                  timestampString = "530027584.555554"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"

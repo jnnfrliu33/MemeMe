@@ -20,6 +20,7 @@ class MemeTableViewController: UITableViewController {
     // MARK: Life Cycle
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         tableView.reloadData()
     }
     
