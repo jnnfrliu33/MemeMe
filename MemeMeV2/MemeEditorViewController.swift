@@ -8,7 +8,7 @@
 
 import UIKit
 
-// MARK: - MemeEditorViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate
+// MARK: - MemeEditorViewController: UIViewController, UINavigationControllerDelegate
 
 class MemeEditorViewController: UIViewController, UINavigationControllerDelegate {
     
@@ -68,7 +68,7 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
         self.navigationController?.navigationBar.isHidden = isHidden
     }
     
-    // MARK: Keyboard Adjustment Methods
+    // MARK: Keyboard Adjustment Functions
     
     func subscribeToKeyboardNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)
@@ -98,7 +98,7 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
         return keyboardSize.cgRectValue.height
     }
     
-    // MARK: Generating Meme Object Methods
+    // MARK: Meme Generating Functions
     
     func save() {
         // Create the meme
