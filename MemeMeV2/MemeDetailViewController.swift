@@ -36,8 +36,6 @@ class MemeDetailViewController: UIViewController {
     // MARK: Actions
     
     @IBAction func backToRootView(_ sender: Any) {
-        if let navigationController = self.navigationController {
-            navigationController.popToRootViewController(animated: true)
-        }
+        self.dismiss(animated: true, completion: nil)
     }
 }
