@@ -44,16 +44,16 @@ class MemeCollectionViewController: UICollectionViewController {
     // MARK: Collection View Data Source
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.memes.count
+        return memes.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         // Dequeue a reusable cell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MemeCollectionViewCell", for: indexPath) as! MemeCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! MemeCollectionViewCell
         
         // Access saved meme for a given row
-        let meme: Meme = self.memes[(indexPath as NSIndexPath).row]
+        let meme: Meme = memes[(indexPath as NSIndexPath).row]
         
         // Set the label and image
         cell.memeImageView.image = meme.memedImage
@@ -66,7 +66,7 @@ class MemeCollectionViewController: UICollectionViewController {
         let detailController = self.storyboard!.instantiateViewController(withIdentifier: "MemeDetailViewController") as! MemeDetailViewController
         
         // Retrieve the meme to be displayed in the Meme Detail View Controller
-        let meme: Meme = self.memes[(indexPath as NSIndexPath).row]
+        let meme: Meme = memes[(indexPath as NSIndexPath).row]
         
         self.navigationController!.present(detailController, animated: true, completion: {() -> Void in
             // Set the meme image that will be displayed in the Meme Detail View Controller
