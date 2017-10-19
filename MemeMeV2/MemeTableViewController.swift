@@ -57,9 +57,9 @@ class MemeTableViewController: UITableViewController {
         // Retrieve the meme to be displayed in the Meme Detail View Controller
         let meme: Meme = memes[(indexPath as NSIndexPath).row]
         
-        // Set the meme image that will be displayed in the Meme Detail View Controller
-        detailController.imageView.image = meme.memedImage
-        
-        self.navigationController!.pushViewController(detailController, animated: true)
+        self.navigationController!.present(detailController, animated: true, completion: {() -> Void in
+            // Set the meme image that will be displayed in the Meme Detail View Controller
+            detailController.imageView.image = meme.memedImage
+        })
     }
 }

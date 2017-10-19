@@ -12,10 +12,26 @@ import UIKit
 
 class MemeDetailViewController: UIViewController {
     
+    // MARK: Properties
+    
+    var memes: [Meme] { return (UIApplication.shared.delegate as! AppDelegate).memes }
+    
     // MARK: Outlets
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var backButton: UIBarButtonItem!
+    
+    // MARK: Life Cycle
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Make sure image is set
+        guard self.imageView.image != nil else {
+            print ("Image not found")
+            return
+        }
+    }
     
     // MARK: Actions
     
@@ -24,5 +40,4 @@ class MemeDetailViewController: UIViewController {
             navigationController.popToRootViewController(animated: true)
         }
     }
-    
 }
