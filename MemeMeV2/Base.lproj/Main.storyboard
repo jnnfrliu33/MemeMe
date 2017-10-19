@@ -13,7 +13,7 @@
         <scene sceneID="2S7-ss-oNl">
             <objects>
                 <navigationController title="Meme Table View" id="m5j-YH-l0L" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Table" image="tableView" id="kTh-d0-sls"/>
+                    <tabBarItem key="tabBarItem" title="Table" image="TableView" id="kTh-d0-sls"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TAv-dE-8U4">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -92,7 +92,7 @@
         <scene sceneID="cpH-7q-dlV">
             <objects>
                 <navigationController title="Meme Collection View" id="uhK-uH-6MH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Grid" image="gridView" id="zYX-JJ-kKg">
+                    <tabBarItem key="tabBarItem" title="Grid" image="CollectionView" id="zYX-JJ-kKg">
                         <inset key="landscapeImageInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <inset key="largeContentSizeImageInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
@@ -315,8 +315,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gridView" width="30" height="30"/>
-        <image name="tableView" width="30" height="30"/>
+        <image name="CollectionView" width="30" height="30"/>
+        <image name="TableView" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Efm-lD-44W"/>
