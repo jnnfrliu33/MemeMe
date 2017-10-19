@@ -33,7 +33,7 @@ class MemeCollectionViewController: UICollectionViewController {
         // Flow Layout
         let space: CGFloat = 3.0
         let widthDimension = (view.frame.size.width - (2 * space)) / 3.0
-        let heightDimension = (view.frame.size.height - (2 * space)) / 7.5
+        let heightDimension = (view.frame.size.height - (2 * space)) / 3.0
         
         flowLayout.minimumInteritemSpacing = space
         flowLayout.minimumLineSpacing = space
