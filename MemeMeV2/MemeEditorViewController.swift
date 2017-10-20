@@ -125,8 +125,6 @@ class MemeEditorViewController: UIViewController, UINavigationControllerDelegate
         let object = UIApplication.shared.delegate
         let appDelegate = object as! AppDelegate
         appDelegate.memes.append(meme)
-        
-        print(appDelegate.memes)
     }
     
     func generateMemedImage() -> UIImage {
