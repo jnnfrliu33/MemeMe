@@ -12,14 +12,9 @@ import UIKit
 
 class MemeDetailViewController: UIViewController {
     
-    // MARK: Properties
-    
-    var memes: [Meme] { return (UIApplication.shared.delegate as! AppDelegate).memes }
-    
     // MARK: Outlets
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var backButton: UIBarButtonItem!
     
     // MARK: Life Cycle
     
@@ -31,11 +26,5 @@ class MemeDetailViewController: UIViewController {
             print ("Image not found")
             return
         }
-    }
-    
-    // MARK: Actions
-    
-    @IBAction func backToRootView(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
     }
 }

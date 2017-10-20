@@ -68,9 +68,12 @@ class MemeCollectionViewController: UICollectionViewController {
         // Retrieve the meme to be displayed in the Meme Detail View Controller
         let meme: Meme = memes[(indexPath as NSIndexPath).row]
         
-        self.navigationController!.present(detailController, animated: true, completion: {() -> Void in
-            // Set the meme image that will be displayed in the Meme Detail View Controller
-            detailController.imageView.image = meme.memedImage
-        })
+        // Instantiate Meme Detail View Controller to load its view and connect its outlets
+        _ = detailController.view 
+        
+        // Set the meme image that will be displayed in the Meme Detail View Controller
+        detailController.imageView.image = meme.memedImage
+        
+        self.navigationController!.pushViewController(detailController, animated: true)
     }
 }
